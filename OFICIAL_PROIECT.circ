@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="downloadFrequency" val="2083333.3333333333"/>
+    <a name="simulationFrequency" val="2048000.0"/>
+    <comp lib="0" loc="(250,150)" name="Clock"/>
+    <comp lib="0" loc="(560,310)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="REST"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="0" loc="(560,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="SUCURI"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="0" loc="(560,370)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="BANI_INTRODUSI"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="5" loc="(160,160)" name="Button">
+      <a name="label" val="BANI5"/>
+    </comp>
+    <comp lib="5" loc="(160,190)" name="Button">
+      <a name="label" val="BANI10"/>
+    </comp>
+    <comp lib="5" loc="(160,220)" name="Button">
+      <a name="label" val="BANI50"/>
+    </comp>
+    <comp lib="5" loc="(160,260)" name="Button">
+      <a name="label" val="OBIECT_strain"/>
+    </comp>
+    <comp lib="5" loc="(160,300)" name="Button">
+      <a name="label" val="dispense"/>
+      <a name="press" val="passive"/>
+    </comp>
+    <comp lib="5" loc="(160,330)" name="Button">
+      <a name="label" val="continue"/>
+    </comp>
+    <comp lib="5" loc="(560,150)" name="LED">
+      <a name="label" val="Returnare_Monede"/>
+    </comp>
+    <comp lib="5" loc="(560,170)" name="LED">
+      <a name="label" val="Fara_Cola"/>
+    </comp>
+    <comp lib="5" loc="(560,190)" name="LED">
+      <a name="label" val="Accept_Moneda"/>
+    </comp>
+    <comp lib="5" loc="(560,210)" name="LED">
+      <a name="label" val="Accept_Total"/>
+    </comp>
+    <comp lib="5" loc="(560,230)" name="LED">
+      <a name="label" val="Coca_Cola"/>
+    </comp>
+    <comp lib="5" loc="(560,250)" name="LED">
+      <a name="label" val="Sold_Insuficient"/>
+    </comp>
+    <comp lib="5" loc="(560,270)" name="LED">
+      <a name="label" val="ObiectStrain"/>
+    </comp>
+    <comp loc="(500,150)" name="ControlUnit">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="controlunit_1"/>
+    </comp>
+    <wire from="(160,160)" to="(160,170)"/>
+    <wire from="(160,170)" to="(280,170)"/>
+    <wire from="(160,190)" to="(280,190)"/>
+    <wire from="(160,220)" to="(170,220)"/>
+    <wire from="(160,260)" to="(170,260)"/>
+    <wire from="(160,300)" to="(180,300)"/>
+    <wire from="(160,330)" to="(170,330)"/>
+    <wire from="(170,210)" to="(170,220)"/>
+    <wire from="(170,210)" to="(280,210)"/>
+    <wire from="(170,230)" to="(170,260)"/>
+    <wire from="(170,230)" to="(280,230)"/>
+    <wire from="(170,270)" to="(170,330)"/>
+    <wire from="(170,270)" to="(280,270)"/>
+    <wire from="(180,250)" to="(180,300)"/>
+    <wire from="(180,250)" to="(280,250)"/>
+    <wire from="(250,150)" to="(280,150)"/>
+    <wire from="(500,150)" to="(560,150)"/>
+    <wire from="(500,170)" to="(560,170)"/>
+    <wire from="(500,190)" to="(560,190)"/>
+    <wire from="(500,210)" to="(560,210)"/>
+    <wire from="(500,230)" to="(560,230)"/>
+    <wire from="(500,250)" to="(560,250)"/>
+    <wire from="(500,270)" to="(560,270)"/>
+    <wire from="(500,290)" to="(550,290)"/>
+    <wire from="(500,310)" to="(540,310)"/>
+    <wire from="(500,330)" to="(550,330)"/>
+    <wire from="(540,310)" to="(540,340)"/>
+    <wire from="(540,340)" to="(560,340)"/>
+    <wire from="(550,290)" to="(550,310)"/>
+    <wire from="(550,310)" to="(560,310)"/>
+    <wire from="(550,330)" to="(550,370)"/>
+    <wire from="(550,370)" to="(560,370)"/>
+  </circuit>
+  <vhdl name="ControlUnit">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY ControlUnit IS
+  PORT (
+ 		Clk: in std_logic;
+  		F0,F1,F2,F3, buton, continua: in std_logic;
+  		RM,FS,AM,AT,Cola, SoldInsuficient, OS: out std_logic;
+  		restOut: out std_logic_vector(8 downto 0);
+  		sucuriRamase: out std_logic_vector(8 downto 0);
+  		TOTAL: out std_logic_vector(8 downto 0)
+  		);
+END ControlUnit;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE comportamentala OF ControlUnit IS
+
+	
+type STATE_T is (idle, decizie, verif_total, IM, continue);
+signal STATE, NXSTATE: STATE_T;
+signal sucuri: std_logic_vector(8 downto 0) := "000000011";
+signal rest: std_logic_vector(8 downto 0) := "000000000";
+signal suma: std_logic_vector(8 downto 0) := "000000000";
+
+BEGIN
+
+UPDATE_STATE: process (Clk)
+			begin
+				if (rising_edge(ClK)) then
+					STATE &lt;= NXSTATE;
+					end if;
+			end process UPDATE_STATE;
+			
+
+TRANSITIONS: process (STATE,  buton, continua)--POATE SI IM
+			begin
+				case STATE is
+					when idle =&gt; if sucuri="000000000" then FS&lt;='1'; NXSTATE&lt;=idle; 
+					
+								else NXSTATE &lt;= decizie; FS &lt;= '0';
+								end if;
+								
+					when decizie =&gt; if buton='0' then NXSTATE &lt;= verif_total;
+							   else NXSTATE &lt;= IM;
+							   end if;
+
+					when IM =&gt; NXSTATE &lt;= decizie;
+					
+					when verif_total =&gt; NXSTATE &lt;= continue;
+
+					when continue =&gt; if continua = '1' then NXSTATE &lt;= idle;
+					else NXSTATE &lt;= continue;
+					end if;
+							  		 
+				end case;
+			end process;
+
+					
+Outputs: process (STATE, buton)
+		begin
+		-- initialization
+		case STATE is
+					when idle =&gt; if(sucuri = "000000000") then FS&lt;= '1';RM&lt;='0';AM&lt;='0';AT&lt;='0';Cola&lt;='0'; SoldInsuficient&lt;='0'; OS&lt;='0';
+					else RM&lt;='0';FS&lt;='0';AM&lt;='0';AT&lt;='0';Cola&lt;='0'; SoldInsuficient&lt;='0'; OS&lt;='0'; rest &lt;= "000000000";
+						end if;
+
+					when decizie =&gt; null;
+					
+					when verif_total =&gt; if suma &gt; "001100100" then rest&lt;="000000000"; AT &lt;='1'; Cola &lt;= '1'; RM &lt;= '1';  rest &lt;= suma - "001100100";sucuri &lt;= sucuri - 1; 
+								elsif (suma = "001100100") then rest &lt;="000000000"; AT &lt;= '1'; Cola &lt;= '1'; rest &lt;= suma - "001100100"; sucuri &lt;= sucuri - 1; 
+								elsif(suma = "000000000") then RM &lt;= '0'; SoldInsuficient &lt;= '1';
+								elsif(suma &lt; "001100100") then  rest &lt;=suma; RM &lt;= '1'; SoldInsuficient&lt;='1'; 
+								end if;
+								suma &lt;= "000000000"; 
+												
+					when continue =&gt; null;		
+					when IM =&gt; AM &lt;= '0'; OS&lt;= '0';
+						if F0 = '1' then AM &lt;='1'; suma &lt;= suma + "000000101";
+						   elsif F1 = '1' then AM &lt;='1'; suma &lt;= suma + "000001010";
+						   elsif F2 = '1' then AM &lt;='1'; suma &lt;= suma + "000110010";
+						   elsif F3 = '1' then OS &lt;= '1';
+						   end if;
+				end case;	
+
+				TOTAL &lt;= suma;
+				sucuriRamase &lt;= sucuri;
+				restOut &lt;= rest;
+		end process;	
+
+
+END comportamentala;
+
+----------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY sumator IS
+  PORT (
+  	a: IN std_logic_vector(8 DOWNTO 0);
+  	b: IN std_logic_vector(8 DOWNTO 0);
+  	sumaOut: out std_logic_vector(8 downto 0)
+    );
+END sumator;
+
+ARCHITECTURE TypeArchitecture OF sumator IS
+
+  begin
+
+  sumaOut &lt;= a + b;
+
+
+END TypeArchitecture;
+
+--------------------------------------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY scazator IS
+  PORT (
+  	a: IN std_logic_vector(8 DOWNTO 0);
+  	aOUT: out std_logic_vector(8 downto 0)
+    );
+END scazator;
+
+ARCHITECTURE TypeArchitecture OF scazator IS
+
+  begin
+
+  aOUT &lt;= a - 1;
+
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="sumator">library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY sumator IS
+  PORT (
+  	a: IN std_logic_vector(8 DOWNTO 0);
+  	b: IN std_logic_vector(8 DOWNTO 0);
+  	sumaOut: out std_logic_vector(8 downto 0)
+    );
+END sumator;
+
+ARCHITECTURE TypeArchitecture OF sumator IS
+
+  begin
+
+  sumaOut &lt;= a + b;
+
+  end TypeArchitecture;</vhdl>
+  <vhdl name="scazator">library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY scazator IS
+  PORT (
+  	a: IN std_logic_vector(8 DOWNTO 0);
+  	aOUT: out std_logic_vector(8 downto 0)
+    );
+END scazator;
+
+ARCHITECTURE TypeArchitecture OF scazator IS
+
+  begin
+
+  aOUT &lt;= a - 1;
+
+
+END TypeArchitecture;</vhdl>
+</project>
